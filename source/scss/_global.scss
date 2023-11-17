@@ -1,0 +1,175 @@
+.content__tabs-title._active-tab-title {
+  background: rgb(0, 8, 255);
+}
+
+.btn {
+  width: 272px;
+  min-height: 60px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#26e27c),
+    to(#15d36c)
+  );
+  background: -o-linear-gradient(top, #26e27c 0%, #15d36c 100%);
+  background: linear-gradient(180deg, #26e27c 0%, #15d36c 100%);
+  display: -ms-inline-grid;
+  display: inline-grid;
+  place-items: center;
+  line-height: 180%;
+  color: $main-text;
+  border-radius: 12px;
+}
+
+.btn._white {
+  background: #fff;
+}
+
+.tab {
+  display: none;
+  &._active-tab {
+    display: block;
+    animation-name: tab;
+    animation-duration: .6s;
+  }
+}
+
+@keyframes tab {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.tab:not(._active-tab) {
+  display: none !important;
+}
+
+.achievements__list__swiper__arrow {
+  position: absolute;
+  z-index: 3;
+  width: 56px;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background: $white-gradient;
+  &._prev {
+    left: 0;
+    top: 0;
+  }
+  &._next {
+    right: 0;
+    top: 0;
+    transform: rotate(180deg);
+  }
+  &.swiper-button-disabled {
+    img {
+      opacity: 0.2;
+    }
+  }
+}
+
+.content__title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: $default-lineHeight;
+  margin-left: 0.75em;
+  color: $main-text;
+}
+
+.content__tabs-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1.25em;
+  -moz-column-gap: 1.25em;
+  column-gap: 1.25em;
+}
+
+.content__tabs-title {
+  display: grid;
+  place-items: center;
+  background-color: $main-gray;
+  min-width: 81px;
+  height: 54px;
+}
+.task {
+  position: relative;
+  z-index: 100;
+  background-color: $main-blue;
+  border-radius: 12px;
+  padding: 0px 2em 0 1.25em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 118px;
+}
+
+.achievement {
+  width: 120px;
+  height: 120px;
+  display: grid;
+  place-items: center;
+  background: $main-blue;
+  border-radius: 50%;
+}
+
+#chart {
+  width: 100px !important;
+  height: 100px !important;
+}
+
+//scrollbar
+
+.os-scrollbar-horizontal .os-scrollbar-handle {
+  width: 40px !important;
+  background: #7265fb !important;
+  height: 4px !important;
+  border-radius: 12px !important;
+}
+
+.os-scrollbar-vertical {
+  .os-scrollbar-handle {
+    width: 8px !important;
+    height: 205px !important;
+    background: #7265fb !important;
+    border-radius: 12px !important;
+  }
+  .os-scrollbar-track {
+    background-color: $main-gray;
+    border-radius: 12px;
+  }
+}
+
+body._modal {
+  .header {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+}
+
+body {
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+}
+
+.over {
+  opacity: 0;
+  transition: all 0.3s linear;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: rgba(30, 21, 132, 0.4);
+  backdrop-filter: blur(5px);
+  height: 100vh;
+  z-index: 2;
+}
