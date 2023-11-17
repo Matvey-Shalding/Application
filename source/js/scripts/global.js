@@ -1,1 +1,0 @@
-document.querySelectorAll('a').forEach(item => void item.setAttribute('tabindex','-1'))
