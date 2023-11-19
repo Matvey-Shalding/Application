@@ -1,0 +1,185 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  font-family: 'Noto Sans';
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  &::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  &::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+html {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+
+  &:link {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  &:visited {
+    text-decoration: none;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+aside {
+  display: block;
+}
+
+nav {
+  display: block;
+}
+
+footer {
+  display: block;
+}
+
+header {
+  display: block;
+}
+
+section {
+  display: block;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+h2 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+h3 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+h4 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul {
+  list-style: none;
+
+  li {
+    list-style: none;
+  }
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+input {
+  font-size: inherit;
+
+  &::-ms-clear {
+    display: none;
+  }
+}
+
+textarea {
+  font-size: inherit;
+}
+
+button {
+  font-size: inherit;
+  display: inline-block;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: none;
+  cursor: pointer;
+
+  &::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+}
+
+input[type=submit] {
+  display: inline-block;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: none;
+  cursor: pointer;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+html {
+  min-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background: -o-linear-gradient(269.82deg, rgba(246, 245, 255, 0.5) 0.16%, rgba(240, 240, 255, 0.5) 0.16%, rgba(114, 101, 251, 0.5) 100.57%);
+  background: linear-gradient(180.18deg, rgba(246, 245, 255, 0.5) 0.16%, rgba(240, 240, 255, 0.5) 0.16%, rgba(114, 101, 251, 0.5) 100.57%);
+}
+
+body.menu-burger-open {
+  max-height: 100%;
+  overflow: hidden;
+}
